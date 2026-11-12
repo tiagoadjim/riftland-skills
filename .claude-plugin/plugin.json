@@ -1,0 +1,22 @@
+{
+  "name": "riftland",
+  "version": "1.0.0",
+  "description": "Riftland for AI agents: images, videos, UGC ads, product photos, campaigns, talking avatars, character swaps and motion graphics with your Riftland credits. Connects Riftland's MCP server and adds one skill per workflow.",
+  "author": {
+    "name": "Riftland",
+    "url": "https://riftland.io"
+  },
+  "homepage": "https://riftland.io",
+  "repository": "https://github.com/tiagoadjim/riftland-skills",
+  "keywords": [
+    "riftland",
+    "image-generation",
+    "video-generation",
+    "ugc",
+    "ads",
+    "avatars",
+    "motion-graphics",
+    "mcp",
+    "agent-skills"
+  ]
+}

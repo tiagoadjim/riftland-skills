@@ -1,0 +1,47 @@
+{
+  "ai-influencer": [
+    "rift-id-lora"
+  ],
+  "cinema-film": [
+    "kling-4",
+    "seedance-2.5",
+    "wan-3-prime"
+  ],
+  "cinematic-shot": [
+    "kling-4",
+    "seedance-2.5",
+    "wan-3-prime"
+  ],
+  "hero-video-loop": [
+    "kling-2.6"
+  ],
+  "music-video": [
+    "kling-4",
+    "seedance-2.5"
+  ],
+  "product-spin": [
+    "seedance-2.5",
+    "wan-3-prime"
+  ],
+  "relight-and-angles": [
+    "gpt-image-2",
+    "nano-banana-pro",
+    "qwen-image-3",
+    "seedream-5-pro"
+  ],
+  "scroll-video": [
+    "kling-2.6",
+    "kling-3",
+    "seedance-2.0-fast",
+    "veo-3.1-fast"
+  ],
+  "storyboard-film": [
+    "kling-4"
+  ],
+  "web-images": [
+    "flux-2-pro",
+    "gpt-image-2",
+    "nano-banana-pro",
+    "seedream-4.5"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "riftland": {
+      "type": "http",
+      "url": "https://riftland.io/mcp"
+    }
+  }
+}

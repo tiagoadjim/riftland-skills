@@ -1,0 +1,60 @@
+{
+  "name": "riftland",
+  "owner": {
+    "name": "Riftland",
+    "url": "https://riftland.io"
+  },
+  "plugins": [
+    {
+      "name": "riftland",
+      "source": "./",
+      "description": "Riftland for AI agents: images, videos, UGC ads, product photos, campaigns, talking avatars, character swaps and motion graphics with your Riftland credits. Connects Riftland's MCP server and adds one skill per workflow.",
+      "version": "1.0.0",
+      "skills": [
+        "./riftland",
+        "./riftland-create",
+        "./riftland-ugc-video-ad",
+        "./riftland-product-shots",
+        "./riftland-static-ads-campaign",
+        "./riftland-ad-remix",
+        "./riftland-brand-kit",
+        "./riftland-product-link-video",
+        "./riftland-app-promo-video",
+        "./riftland-cinematic-shot",
+        "./riftland-storyboard-film",
+        "./riftland-ai-influencer",
+        "./riftland-talking-avatar",
+        "./riftland-character-swap",
+        "./riftland-motion-graphics-promo",
+        "./riftland-explainer-video",
+        "./riftland-social-carousel",
+        "./riftland-3d-model",
+        "./riftland-product-spin",
+        "./riftland-relight-and-angles",
+        "./riftland-logo-to-svg",
+        "./riftland-photo-retouch",
+        "./riftland-pro-headshot",
+        "./riftland-product-mockup",
+        "./riftland-virtual-try-on",
+        "./riftland-video-cleanup",
+        "./riftland-voiceover-and-music",
+        "./riftland-ui-icon-set",
+        "./riftland-app-icon",
+        "./riftland-consistent-elements",
+        "./riftland-scroll-video",
+        "./riftland-hero-video-loop",
+        "./riftland-web-images",
+        "./riftland-placeholder-images",
+        "./riftland-app-graphics",
+        "./riftland-web-3d-model",
+        "./riftland-cinema-film",
+        "./riftland-music-video",
+        "./riftland-motion-code",
+        "./riftland-product-photoshoot",
+        "./riftland-marketplace-cards",
+        "./riftland-youtube-thumbnail",
+        "./riftland-my-character"
+      ]
+    }
+  ]
+}

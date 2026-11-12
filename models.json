@@ -1,0 +1,463 @@
+{
+  "schema": 1,
+  "note": "A snapshot of Riftland's router. The live answer is models_explore with action recommended (MCP) or riftland models --recommended (CLI). Do not hard-code a model from it.",
+  "recommendationsVersion": "62040ae5",
+  "generatedOn": "2026-11-12",
+  "recommended": [
+    {
+      "mode": "photo",
+      "kind": "image",
+      "label": {
+        "es": "Foto",
+        "en": "Photo"
+      },
+      "when": "A realistic photograph of a subject or scene with no special style or product focus.",
+      "model": "seedream-5-pro",
+      "modelLabel": "Seedream 5.0 Pro",
+      "reason": "Best for realistic photos",
+      "params": {
+        "aspect": "4:3"
+      },
+      "alternatives": {
+        "cheap": "seedream-4.5"
+      }
+    },
+    {
+      "mode": "portrait",
+      "kind": "image",
+      "label": {
+        "es": "Retrato",
+        "en": "Portrait"
+      },
+      "when": "A person is the subject: headshot, editorial or character portrait.",
+      "model": "riftland-soul",
+      "modelLabel": "Riftland Rair",
+      "reason": "Best for portraits",
+      "params": {
+        "aspect": "3:4"
+      },
+      "alternatives": {
+        "cheap": "qwen-image-3"
+      }
+    },
+    {
+      "mode": "cinematic_still",
+      "kind": "image",
+      "label": {
+        "es": "Fotograma de cine",
+        "en": "Cinematic still"
+      },
+      "when": "A single frame that looks taken from a feature film: mood, wide frame, motivated light.",
+      "model": "flux-2-pro",
+      "modelLabel": "FLUX.2 Pro",
+      "reason": "Best for cinematic looks",
+      "params": {
+        "aspect": "16:9"
+      },
+      "alternatives": {}
+    },
+    {
+      "mode": "product_shot",
+      "kind": "image",
+      "label": {
+        "es": "Foto de producto",
+        "en": "Product shot"
+      },
+      "when": "An object or packaged product is the hero: catalog, e-commerce or brand imagery.",
+      "model": "seedream-5-pro",
+      "modelLabel": "Seedream 5.0 Pro",
+      "reason": "Best for realistic photos",
+      "params": {
+        "aspect": "1:1"
+      },
+      "alternatives": {
+        "cheap": "seedream-4.5"
+      }
+    },
+    {
+      "mode": "lifestyle",
+      "kind": "image",
+      "label": {
+        "es": "Estilo de vida",
+        "en": "Lifestyle"
+      },
+      "when": "A product or person shown in a believable everyday situation, candid and warm.",
+      "model": "seedream-5-pro",
+      "modelLabel": "Seedream 5.0 Pro",
+      "reason": "Best for realistic photos",
+      "params": {
+        "aspect": "4:3"
+      },
+      "alternatives": {
+        "cheap": "seedream-4.5"
+      }
+    },
+    {
+      "mode": "social_post",
+      "kind": "image",
+      "label": {
+        "es": "Post para redes",
+        "en": "Social post"
+      },
+      "when": "A scroll-stopping image made for a feed: bold subject, clear focal point, room for a caption.",
+      "model": "gpt-image-2.6-sunburst",
+      "modelLabel": "GPT Image 2.6 Sunburst",
+      "reason": "Best for graphic design layouts",
+      "params": {
+        "aspect": "3:4"
+      },
+      "alternatives": {
+        "fast": "ideogram-4",
+        "cheap": "gpt-image-2.5-flare"
+      }
+    },
+    {
+      "mode": "poster_typography",
+      "kind": "image",
+      "label": {
+        "es": "Póster y tipografía",
+        "en": "Poster & typography"
+      },
+      "when": "Legible text is the point: poster, cover, banner, title card or any layout with words.",
+      "model": "gpt-image-2.6-sunburst",
+      "modelLabel": "GPT Image 2.6 Sunburst",
+      "reason": "Best for text on images",
+      "params": {
+        "aspect": "3:4"
+      },
+      "alternatives": {
+        "fast": "ideogram-4",
+        "cheap": "gpt-image-2.5-flare"
+      }
+    },
+    {
+      "mode": "logo_vector",
+      "kind": "image",
+      "label": {
+        "es": "Logo y vector",
+        "en": "Logo & vector"
+      },
+      "when": "A logo, icon, emblem or flat vector graphic on a plain background.",
+      "model": "gpt-image-2.6-sunburst",
+      "modelLabel": "GPT Image 2.6 Sunburst",
+      "reason": "Best for logos and vector graphics",
+      "params": {
+        "aspect": "1:1"
+      },
+      "alternatives": {
+        "fast": "gpt-image-2.6-flare"
+      }
+    },
+    {
+      "mode": "illustration",
+      "kind": "image",
+      "label": {
+        "es": "Ilustración",
+        "en": "Illustration"
+      },
+      "when": "A drawn or painted image, not a photograph: cartoon, editorial, concept art, picture-book.",
+      "model": "gpt-image-2.6-sunburst",
+      "modelLabel": "GPT Image 2.6 Sunburst",
+      "reason": "Best for graphic design layouts",
+      "params": {
+        "aspect": "1:1"
+      },
+      "alternatives": {
+        "fast": "ideogram-4",
+        "cheap": "gpt-image-2.5-flare"
+      }
+    },
+    {
+      "mode": "edit",
+      "kind": "image",
+      "label": {
+        "es": "Editar imagen",
+        "en": "Edit image"
+      },
+      "when": "Change one thing in an existing image and keep everything else exactly as it is.",
+      "model": "seedream-5-pro",
+      "modelLabel": "Seedream 5.0 Pro",
+      "reason": "Best for precise edits",
+      "params": {
+        "aspect": "1:1"
+      },
+      "alternatives": {
+        "cheap": "seedream-4.5"
+      }
+    },
+    {
+      "mode": "cinematic_shot",
+      "kind": "video",
+      "label": {
+        "es": "Plano cinematográfico",
+        "en": "Cinematic shot"
+      },
+      "when": "A film-like clip of one scene or a short sequence: deliberate camera move, mood, natural sound.",
+      "model": "seedance-2.5",
+      "modelLabel": "Seedance 2.5",
+      "reason": "Best for cinematic shots",
+      "params": {
+        "aspect": "16:9",
+        "resolution": "1080p",
+        "duration": 8,
+        "audio": true
+      },
+      "alternatives": {}
+    },
+    {
+      "mode": "reel",
+      "kind": "video",
+      "label": {
+        "es": "Reel vertical",
+        "en": "Vertical reel"
+      },
+      "when": "A short vertical clip for Reels, TikTok or Shorts: fast hook, strong motion, sound on.",
+      "model": "kling-3",
+      "modelLabel": "Kling 3.0 Pro",
+      "reason": "Best for natural motion",
+      "params": {
+        "aspect": "9:16",
+        "resolution": "1080p",
+        "duration": 8,
+        "audio": true
+      },
+      "alternatives": {}
+    },
+    {
+      "mode": "product_video",
+      "kind": "video",
+      "label": {
+        "es": "Video de producto",
+        "en": "Product video"
+      },
+      "when": "A short clip that shows a product clearly: reveal, rotation, use in hand or on a surface.",
+      "model": "seedance-2.5",
+      "modelLabel": "Seedance 2.5",
+      "reason": "Best for animating an image",
+      "params": {
+        "aspect": "16:9",
+        "resolution": "1080p",
+        "duration": 5,
+        "audio": true
+      },
+      "alternatives": {
+        "fast": "veo-3.1-fast",
+        "cheap": "veo-3.1-fast"
+      }
+    },
+    {
+      "mode": "animate_image",
+      "kind": "video",
+      "label": {
+        "es": "Animar imagen",
+        "en": "Animate image"
+      },
+      "when": "Bring a given still image to life while keeping its subject and look unchanged.",
+      "model": "seedance-2.5",
+      "modelLabel": "Seedance 2.5",
+      "reason": "Best for animating an image",
+      "params": {
+        "aspect": "16:9",
+        "resolution": "1080p",
+        "duration": 5,
+        "audio": true
+      },
+      "alternatives": {}
+    },
+    {
+      "mode": "loop",
+      "kind": "video",
+      "label": {
+        "es": "Loop continuo",
+        "en": "Seamless loop"
+      },
+      "when": "A short clip that ends where it starts, for backgrounds, banners or ambient visuals.",
+      "model": "kling-3",
+      "modelLabel": "Kling 3.0 Pro",
+      "reason": "Best for animating an image",
+      "params": {
+        "aspect": "1:1",
+        "resolution": "1080p",
+        "duration": 5,
+        "audio": false
+      },
+      "alternatives": {}
+    }
+  ],
+  "changeModels": [
+    {
+      "id": "nano-banana-2.1",
+      "label": "Nano Banana 2.1"
+    },
+    {
+      "id": "gpt-image-2.6-flare",
+      "label": "GPT Image 2.6 Flare"
+    },
+    {
+      "id": "gpt-image-2.6-sunburst",
+      "label": "GPT Image 2.6 Sunburst"
+    },
+    {
+      "id": "gpt-image-2.5-flare",
+      "label": "GPT Image 2.5 Flare"
+    },
+    {
+      "id": "seedream-5-pro",
+      "label": "Seedream 5.0 Pro"
+    },
+    {
+      "id": "flux-3",
+      "label": "FLUX 3 Image"
+    },
+    {
+      "id": "qwen-image-3",
+      "label": "Qwen Image 3"
+    },
+    {
+      "id": "flux-2-max",
+      "label": "FLUX.2 Max"
+    },
+    {
+      "id": "nano-banana-2",
+      "label": "Nano Banana 2"
+    },
+    {
+      "id": "nano-banana-pro",
+      "label": "Nano Banana Pro"
+    },
+    {
+      "id": "seedream-4.5",
+      "label": "Seedream 4.5"
+    },
+    {
+      "id": "gpt-image-2",
+      "label": "GPT Image 2"
+    },
+    {
+      "id": "flux-2-pro",
+      "label": "FLUX.2 Pro"
+    }
+  ],
+  "catalog": {
+    "image": [
+      {
+        "id": "nano-banana-2.1",
+        "label": "Nano Banana 2.1"
+      },
+      {
+        "id": "gpt-image-2.6-flare",
+        "label": "GPT Image 2.6 Flare"
+      },
+      {
+        "id": "gpt-image-2.6-sunburst",
+        "label": "GPT Image 2.6 Sunburst"
+      },
+      {
+        "id": "gpt-image-2.5-flare",
+        "label": "GPT Image 2.5 Flare"
+      },
+      {
+        "id": "seedream-5-pro",
+        "label": "Seedream 5.0 Pro"
+      },
+      {
+        "id": "flux-3",
+        "label": "FLUX 3 Image"
+      },
+      {
+        "id": "qwen-image-3",
+        "label": "Qwen Image 3"
+      },
+      {
+        "id": "ideogram-4",
+        "label": "Ideogram 4"
+      },
+      {
+        "id": "krea-2",
+        "label": "Krea 2 Large"
+      },
+      {
+        "id": "flux-2-max",
+        "label": "FLUX.2 Max"
+      },
+      {
+        "id": "nano-banana-2",
+        "label": "Nano Banana 2"
+      },
+      {
+        "id": "nano-banana-pro",
+        "label": "Nano Banana Pro"
+      },
+      {
+        "id": "seedream-4.5",
+        "label": "Seedream 4.5"
+      },
+      {
+        "id": "gpt-image-2",
+        "label": "GPT Image 2"
+      },
+      {
+        "id": "flux-2-pro",
+        "label": "FLUX.2 Pro"
+      },
+      {
+        "id": "rift-id-lora",
+        "label": "Rift ID · LoRA"
+      },
+      {
+        "id": "riftland-soul",
+        "label": "Riftland Rair"
+      }
+    ],
+    "video": [
+      {
+        "id": "kling-3",
+        "label": "Kling 3.0 Pro"
+      },
+      {
+        "id": "kling-4",
+        "label": "Kling 4.0"
+      },
+      {
+        "id": "kling-2.6",
+        "label": "Kling 2.6 Pro"
+      },
+      {
+        "id": "seedance-2.5",
+        "label": "Seedance 2.5"
+      },
+      {
+        "id": "seedance-2.0",
+        "label": "Seedance 2.0"
+      },
+      {
+        "id": "seedance-2.0-fast",
+        "label": "Seedance 2.0 Fast"
+      },
+      {
+        "id": "veo-3.1",
+        "label": "Veo 3.1"
+      },
+      {
+        "id": "veo-3.1-fast",
+        "label": "Veo 3.1 Fast"
+      },
+      {
+        "id": "wan-2.6",
+        "label": "Wan 2.6"
+      },
+      {
+        "id": "wan-3-prime",
+        "label": "Wan 3.0 Prime"
+      },
+      {
+        "id": "flux-3-video",
+        "label": "FLUX.3 Video"
+      },
+      {
+        "id": "hailuo-2.3",
+        "label": "Hailuo 2.3"
+      }
+    ]
+  }
+}
