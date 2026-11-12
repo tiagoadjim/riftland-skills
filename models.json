@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "note": "A snapshot of Riftland's router. The live answer is models_explore with action recommended (MCP) or riftland models --recommended (CLI). Do not hard-code a model from it.",
-  "recommendationsVersion": "62040ae5",
+  "recommendationsVersion": "bf497c68",
   "generatedOn": "2026-11-12",
   "recommended": [
     {
@@ -12,15 +12,13 @@
         "en": "Photo"
       },
       "when": "A realistic photograph of a subject or scene with no special style or product focus.",
-      "model": "seedream-5-pro",
-      "modelLabel": "Seedream 5.0 Pro",
+      "model": "seedream-5.5",
+      "modelLabel": "Seedream 5.5",
       "reason": "Best for realistic photos",
       "params": {
         "aspect": "4:3"
       },
-      "alternatives": {
-        "cheap": "seedream-4.5"
-      }
+      "alternatives": {}
     },
     {
       "mode": "portrait",
@@ -64,15 +62,13 @@
         "en": "Product shot"
       },
       "when": "An object or packaged product is the hero: catalog, e-commerce or brand imagery.",
-      "model": "seedream-5-pro",
-      "modelLabel": "Seedream 5.0 Pro",
+      "model": "seedream-5.5",
+      "modelLabel": "Seedream 5.5",
       "reason": "Best for realistic photos",
       "params": {
         "aspect": "1:1"
       },
-      "alternatives": {
-        "cheap": "seedream-4.5"
-      }
+      "alternatives": {}
     },
     {
       "mode": "lifestyle",
@@ -82,15 +78,13 @@
         "en": "Lifestyle"
       },
       "when": "A product or person shown in a believable everyday situation, candid and warm.",
-      "model": "seedream-5-pro",
-      "modelLabel": "Seedream 5.0 Pro",
+      "model": "seedream-5.5",
+      "modelLabel": "Seedream 5.5",
       "reason": "Best for realistic photos",
       "params": {
         "aspect": "4:3"
       },
-      "alternatives": {
-        "cheap": "seedream-4.5"
-      }
+      "alternatives": {}
     },
     {
       "mode": "social_post",
@@ -175,8 +169,8 @@
         "en": "Edit image"
       },
       "when": "Change one thing in an existing image and keep everything else exactly as it is.",
-      "model": "seedream-5-pro",
-      "modelLabel": "Seedream 5.0 Pro",
+      "model": "seedream-5.5",
+      "modelLabel": "Seedream 5.5",
       "reason": "Best for precise edits",
       "params": {
         "aspect": "1:1"
@@ -302,6 +296,10 @@
       "label": "GPT Image 2.5 Flare"
     },
     {
+      "id": "seedream-5.5",
+      "label": "Seedream 5.5"
+    },
+    {
       "id": "seedream-5-pro",
       "label": "Seedream 5.0 Pro"
     },
@@ -355,6 +353,10 @@
       {
         "id": "gpt-image-2.5-flare",
         "label": "GPT Image 2.5 Flare"
+      },
+      {
+        "id": "seedream-5.5",
+        "label": "Seedream 5.5"
       },
       {
         "id": "seedream-5-pro",
@@ -453,6 +455,10 @@
       {
         "id": "flux-3-video",
         "label": "FLUX.3 Video"
+      },
+      {
+        "id": "minimax-h3",
+        "label": "MiniMax H3"
       },
       {
         "id": "hailuo-2.3",

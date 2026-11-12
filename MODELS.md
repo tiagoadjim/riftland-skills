@@ -2,7 +2,7 @@
 
 This file is a snapshot generated from Riftland's router. Skills never rely on it: the live answer is `models_explore` with action `recommended` over MCP, or `riftland models --recommended` in the Riftland CLI. Do not hard-code a model from this table; ask the live catalog, or let `plan` and `create` choose.
 
-Recommendations version: `62040ae5` · Generated on 2026-11-12.
+Recommendations version: `bf497c68` · Generated on 2026-11-12.
 
 The same data, for tools, is in `models.json`.
 
@@ -10,16 +10,16 @@ The same data, for tools, is in `models.json`.
 
 | What you want to make | Model Riftland picks today | Format | Why | Faster and cheaper alternatives |
 |---|---|---|---|---|
-| **Photo**: A realistic photograph of a subject or scene with no special style or product focus. | Seedream 5.0 Pro (`seedream-5-pro`) | 4:3 | Best for realistic photos | cheaper: Seedream 4.5 (`seedream-4.5`) |
+| **Photo**: A realistic photograph of a subject or scene with no special style or product focus. | Seedream 5.5 (`seedream-5.5`) | 4:3 | Best for realistic photos | none |
 | **Portrait**: A person is the subject: headshot, editorial or character portrait. | Riftland Rair (`riftland-soul`) | 3:4 | Best for portraits | cheaper: Qwen Image 3 (`qwen-image-3`) |
 | **Cinematic still**: A single frame that looks taken from a feature film: mood, wide frame, motivated light. | FLUX.2 Pro (`flux-2-pro`) | 16:9 | Best for cinematic looks | none |
-| **Product shot**: An object or packaged product is the hero: catalog, e-commerce or brand imagery. | Seedream 5.0 Pro (`seedream-5-pro`) | 1:1 | Best for realistic photos | cheaper: Seedream 4.5 (`seedream-4.5`) |
-| **Lifestyle**: A product or person shown in a believable everyday situation, candid and warm. | Seedream 5.0 Pro (`seedream-5-pro`) | 4:3 | Best for realistic photos | cheaper: Seedream 4.5 (`seedream-4.5`) |
+| **Product shot**: An object or packaged product is the hero: catalog, e-commerce or brand imagery. | Seedream 5.5 (`seedream-5.5`) | 1:1 | Best for realistic photos | none |
+| **Lifestyle**: A product or person shown in a believable everyday situation, candid and warm. | Seedream 5.5 (`seedream-5.5`) | 4:3 | Best for realistic photos | none |
 | **Social post**: A scroll-stopping image made for a feed: bold subject, clear focal point, room for a caption. | GPT Image 2.6 Sunburst (`gpt-image-2.6-sunburst`) | 3:4 | Best for graphic design layouts | faster: Ideogram 4 (`ideogram-4`); cheaper: GPT Image 2.5 Flare (`gpt-image-2.5-flare`) |
 | **Poster & typography**: Legible text is the point: poster, cover, banner, title card or any layout with words. | GPT Image 2.6 Sunburst (`gpt-image-2.6-sunburst`) | 3:4 | Best for text on images | faster: Ideogram 4 (`ideogram-4`); cheaper: GPT Image 2.5 Flare (`gpt-image-2.5-flare`) |
 | **Logo & vector**: A logo, icon, emblem or flat vector graphic on a plain background. | GPT Image 2.6 Sunburst (`gpt-image-2.6-sunburst`) | 1:1 | Best for logos and vector graphics | faster: GPT Image 2.6 Flare (`gpt-image-2.6-flare`) |
 | **Illustration**: A drawn or painted image, not a photograph: cartoon, editorial, concept art, picture-book. | GPT Image 2.6 Sunburst (`gpt-image-2.6-sunburst`) | 1:1 | Best for graphic design layouts | faster: Ideogram 4 (`ideogram-4`); cheaper: GPT Image 2.5 Flare (`gpt-image-2.5-flare`) |
-| **Edit image**: Change one thing in an existing image and keep everything else exactly as it is. | Seedream 5.0 Pro (`seedream-5-pro`) | 1:1 | Best for precise edits | cheaper: Seedream 4.5 (`seedream-4.5`) |
+| **Edit image**: Change one thing in an existing image and keep everything else exactly as it is. | Seedream 5.5 (`seedream-5.5`) | 1:1 | Best for precise edits | cheaper: Seedream 4.5 (`seedream-4.5`) |
 
 ## Video
 
@@ -37,6 +37,7 @@ The same data, for tools, is in `models.json`.
 - GPT Image 2.6 Flare (`gpt-image-2.6-flare`)
 - GPT Image 2.6 Sunburst (`gpt-image-2.6-sunburst`)
 - GPT Image 2.5 Flare (`gpt-image-2.5-flare`)
+- Seedream 5.5 (`seedream-5.5`)
 - Seedream 5.0 Pro (`seedream-5-pro`)
 - FLUX 3 Image (`flux-3`)
 - Qwen Image 3 (`qwen-image-3`)
