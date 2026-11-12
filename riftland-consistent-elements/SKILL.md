@@ -27,6 +27,12 @@ Keep a character, product, location, object or style identical across a whole se
 ## Deliver
 The results in order with their links, the @tags used and a line on how to reuse them ("write @luna in any prompt"). Offer more shots of the series or a video from the best image.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:consistency`: Keeping a character, a product or a brand the same. File: `riftland-prompting/references/technique-consistency.md`
+- `technique:references-and-roles`: References and their roles. File: `riftland-prompting/references/technique-references-and-roles.md`
+- `workflow:character-series`: A character, then a consistent series. File: `riftland-workflows/references/workflow-character-series.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

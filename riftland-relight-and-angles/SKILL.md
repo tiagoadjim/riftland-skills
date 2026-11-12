@@ -40,6 +40,10 @@ The image (or a 3–10 s clip, for relight only) and what should change. Infer t
 - Relight can't remove hard shadows baked into a very contrasty photo completely; softness near 1 with overcast or studio gets closest.
 - Creative upscale above about 0.5 of creativity can change faces and text: lower it or use precision.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:editing-and-changes`: Editing and changing a result. File: `riftland-prompting/references/technique-editing-and-changes.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

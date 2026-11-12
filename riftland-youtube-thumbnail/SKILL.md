@@ -100,6 +100,11 @@ Each thumbnail as its URL (`url`; `downloadUrl` to keep the file) with the conce
 - Passing a thumbnail with someone else's face as a style reference.
 - Starting before the user picked a concept.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:text-on-image`: Text on an image. File: `riftland-prompting/references/technique-text-on-image.md`
+- `technique:editing-and-changes`: Editing and changing a result. File: `riftland-prompting/references/technique-editing-and-changes.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

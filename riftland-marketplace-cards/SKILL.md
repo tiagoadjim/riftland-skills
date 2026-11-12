@@ -87,6 +87,12 @@ The images in listing order (main, benefits card, looks), each as its URL (`url`
 - Using the `ads` format for listing images, or `batch` 4 for the main image.
 - Forgetting `language`: the card is written in the language you pass.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:product-photography`: Product photography looks. File: `riftland-prompting/references/technique-product-photography.md`
+- `technique:text-on-image`: Text on an image. File: `riftland-prompting/references/technique-text-on-image.md`
+- `technique:references-and-roles`: References and their roles. File: `riftland-prompting/references/technique-references-and-roles.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

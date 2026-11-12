@@ -24,7 +24,7 @@ The server is https://riftland.io/mcp.
 ## 3. Verify
 
 1. Call `account_overview`. It returns the user's credits and plan. If it fails with an authorization error, the sign-in is not done: go back to step 2.
-2. Call `skills_list`. It lists 42 workflows; the general guide `riftland` is loaded with `skill_get` and is not in that list.
+2. Call `skills_list`. It lists 45 skills (the workflows and the guides to models, prompts and multi-step jobs); the general guide `riftland` is loaded with `skill_get` and is not in that list.
 3. Tell the user what you checked and their credit balance. Do not create anything yet.
 
 ## 4. First request

@@ -51,6 +51,12 @@ A video that advances as the visitor scrolls (the Apple product-page effect): a 
 - No text or logos inside the clip: they smear while scrubbing. Put the copy in HTML over the video.
 - The signed links last 7 days: download the files into the repo, never hotlink them.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:video-prompting`: Prompting a video. File: `riftland-prompting/references/technique-video-prompting.md`
+- `technique:camera-moves`: Camera movement vocabulary. File: `riftland-prompting/references/technique-camera-moves.md`
+- `technique:image-to-video`: Image to video. File: `riftland-prompting/references/technique-image-to-video.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

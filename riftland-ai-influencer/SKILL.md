@@ -39,6 +39,13 @@ Show the four options; adjust and regenerate until the user picks one.
 ## Consistency tips
 Always pass `character_id`; reuse the first result's `model` for the rest of a series; avoid extreme angles and covered faces; use the sheet for full-body shots; keep the signature outfit unless the scene needs another.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:consistency`: Keeping a character, a product or a brand the same. File: `riftland-prompting/references/technique-consistency.md`
+- `technique:references-and-roles`: References and their roles. File: `riftland-prompting/references/technique-references-and-roles.md`
+- `workflow:character-series`: A character, then a consistent series. File: `riftland-workflows/references/workflow-character-series.md`
+- `workflow:portrait-to-talking-avatar`: Portrait to talking avatar. File: `riftland-workflows/references/workflow-portrait-to-talking-avatar.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

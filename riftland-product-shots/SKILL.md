@@ -57,6 +57,12 @@ About 19 credits per image at 2K and 33 at 4K: a set of 4 is about 76 credits.
 ## Next steps to offer
 `upscale_media` (`topaz-image` for detail, `seedvr-image` for a cheap 2x), more styles or seasonal scenes, a product video (`product-link-video`), ads with copy (`static-ads-campaign`).
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:product-photography`: Product photography looks. File: `riftland-prompting/references/technique-product-photography.md`
+- `technique:references-and-roles`: References and their roles. File: `riftland-prompting/references/technique-references-and-roles.md`
+- `workflow:product-to-ad`: Product photo to product photos to a video ad. File: `riftland-workflows/references/workflow-product-to-ad.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

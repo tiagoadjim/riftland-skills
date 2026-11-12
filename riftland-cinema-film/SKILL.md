@@ -77,6 +77,15 @@ Script, continuity review, voice notes, deliveries and shot sound: free (you wri
 - A `continuous` shot renders after the previous take; the first shot can't chain.
 - Errors arrive in Spanish ("Faltan tomas en los planos 3, 5"): fix and retry.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:camera-moves`: Camera movement vocabulary. File: `riftland-prompting/references/technique-camera-moves.md`
+- `technique:multi-shot-and-timing`: Multi-shot clips and timing. File: `riftland-prompting/references/technique-multi-shot-and-timing.md`
+- `technique:dialogue-sound-music`: Dialogue, sound and music. File: `riftland-prompting/references/technique-dialogue-sound-music.md`
+- `workflow:storyboard-to-film`: Storyboard to film with Riftland Cine. File: `riftland-workflows/references/workflow-storyboard-to-film.md`
+- `workflow:voice-and-music-for-video`: Voice-over and music for a video. File: `riftland-workflows/references/workflow-voice-and-music-for-video.md`
+- `workflow:long-video-by-chaining`: A longer video from several clips. File: `riftland-workflows/references/workflow-long-video-by-chaining.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

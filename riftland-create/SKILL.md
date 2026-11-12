@@ -33,6 +33,10 @@ A budget the user already stated ("hasta 100 créditos") that covers the price i
 
 **Retries.** A failed generation is retried at most once, and only when the error says it is transient. Any other error: show its own fix, from the table.
 
+## Reading `model_notes` and `next_steps`
+A plan you can generate, and the result of `create`, carry `model_notes` for the model chosen: `why` (the router's reason and what the model is for), `prompting` (two or three hints for asking it), `limits` (what matters for this request) and `card` (a ref that `guide` opens with `topic`). Read it before you change the prompt, the model or the format: it says what the plan already did, and it gives you one line to tell the user. Do not rewrite the request to follow its hints; the director already did.
+`next_steps`, on a plan and on a result, are workflows worth offering once the result is in (each has `ref`, `title` and `why`). Offer one in a line when it helps; to run it, call `guide` with `topic` set to its `ref` (skill `workflows`). `guide` is free and also reads a model's card (skill `models`) or a technique when a result went wrong (skill `prompting`).
+
 ## Errors and fixes
 | The error says | Do |
 |---|---|
@@ -50,6 +54,16 @@ A budget the user already stated ("hasta 100 créditos") that covers the price i
 
 ## Next
 Offer one next step when it helps: a variation, a bigger version (`upscale_media`), another format, a video from the image.
+
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:image-prompting`: Prompting an image. File: `riftland-prompting/references/technique-image-prompting.md`
+- `technique:video-prompting`: Prompting a video. File: `riftland-prompting/references/technique-video-prompting.md`
+- `technique:editing-and-changes`: Editing and changing a result. File: `riftland-prompting/references/technique-editing-and-changes.md`
+- `technique:troubleshooting`: Troubleshooting: what went wrong and what to change. File: `riftland-prompting/references/technique-troubleshooting.md`
+- `workflow:image-to-video`: Image to video. File: `riftland-workflows/references/workflow-image-to-video.md`
+- `workflow:change-chain-and-upscale`: Change chain, then upscale. File: `riftland-workflows/references/workflow-change-chain-and-upscale.md`
+- Which model fits what: skill `models` (when installed from the repository: `riftland-models/references/models-index.md`).
 
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.

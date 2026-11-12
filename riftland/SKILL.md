@@ -51,6 +51,9 @@ Riftland (https://riftland.io) is an AI image and video platform. Its MCP server
 | The same person, place or object across many generations (@tags) | `element_save`, `elements_list` | `consistent-elements` |
 | Icon sets, illustrations, app icons and favicons for a codebase | `ui_assets_generate`, `ui_assets_files` | `ui-icon-set`, `app-icon` |
 | Web-ready media for a codebase: scroll-scrub videos, hero loops (also 9:16), responsive and OG images, app graphics, embeds | `web_video`, `web_images`, `web_kit_files`, `web_embed` | `scroll-video`, `hero-video-loop`, `web-images`, `placeholder-images`, `app-graphics`, `web-3d-model` |
+| Which model for what: how Riftland chooses, comparing models, a card per model | `models_explore`, `guide` | `models` |
+| Writing a prompt yourself (raw mode, studio fields), a guide per technique, fixing a bad result | `guide` | `prompting` |
+| A job of several steps: image to video, a longer video, a character series, a product ad, voice and music | `guide`, `plan`, `create` | `workflows` |
 
 For multi-step work, load the workflow first: `skill_get` with its `skill_id` (or the MCP prompt of the same name, or the installed skill `riftland-<id>`).
 
@@ -70,8 +73,15 @@ For multi-step work, load the workflow first: `skill_get` with its `skill_id` (o
 - `marketing_studio_catalog` (`category`, `include`: formats, templates, hooks, settings, tools) gives the Marketing Studio ids. For a business that sells services use `category: "services"` (and `vertical`: belleza, salud, fitness, gastronomia, hogar, profesionales, educacion, software, agencias, eventos, mascotas, autos): testimonials, the expert on camera, before/after, tours, promos, app demos, service ads, photos and flyers.
 - `enhance_prompt` (`prompt`, `kind` image or video) is free and shows the prompt the director would write for an idea. Use it only when the user wants to see or edit that prompt; `create` does not need it.
 
-Models: don't answer from memory. `models_explore` is live (what each model is for, its limits, `recommend` from a `need`), and `plan` says which model it chose and why. Leave `model` out of `create` unless the user named one, and keep a model the user named for follow-ups on the same work.
+Models: don't answer from memory. Skill `models` teaches how Riftland chooses and has a card per model; `guide` reads any card, technique or workflow, and `models_explore` is live (what each model is for, its limits, `recommend` from a `need`). `plan` says which model it chose and why (`model_notes`). Leave `model` out of `create` unless the user named one, and keep a model the user named for follow-ups on the same work.
 - Options only some models have (GPT Image 2.6, see `models_explore`): `output_format` `svg` (a real vector file, from text) or `gif` (a looping animation from text: `gif_frames` 2–16, `gif_frame_duration`; describe one motion that returns to its start), `transparent_background` (PNG/WEBP), `size` 2K/4K, `quality` low–max, `thinking_level`, and zone edits of the first reference with `mask_image` (white = change) or `markup_image` (marks drawn on a transparent PNG; name the mark in the prompt). Pass them to `generate_image` with `model` left out and the director picks a model that has them. To vectorize an existing logo use `vectorize`.
+
+## Knowledge
+Model cards, prompting techniques and step-by-step workflows are part of the server and free to read (no credits, no LLM).
+- `guide`: with no arguments it lists them with their refs; `topic` reads one (`model:<id>`, `technique:<id>` or `workflow:<id>`); `for` takes free text (what the user wants, or what went wrong) and returns the closest entries. Call it before writing a prompt by hand (`prompt_mode` `raw`), when choosing between models, when a result came out wrong and when a request needs more than one step.
+- `models_explore` `get` returns a model's card: what it is good at, when not to use it, how to prompt it and its limits.
+- `plan` and `create` results carry `model_notes` (why this model, how to ask it, what to watch) and the workflows worth offering next (`next` on a plan, `next_steps` on a result). Read `model_notes` before you change the prompt or the model.
+- The same entries are resources: `riftland://knowledge` (the index) and `riftland://knowledge/models/<id>`, `riftland://knowledge/techniques/<id>`, `riftland://knowledge/workflows/<id>`.
 
 ## Files
 Where a tool expects a file (`image`, `video`, `media`, `reference_images`, `start_image`…) you can pass a Riftland media id (`ast_…`, from a result or `media_list`), a job id (`job_…` = its first result, `job_…#2` the second), an `upload_id`, or a public https URL of the file itself (imported automatically).
@@ -145,3 +155,6 @@ Errors come back as results with `isError: true` and a Spanish message. Fix and 
 - `marketplace-cards` — Imágenes para publicaciones de marketplace: La imagen principal sobre blanco puro, una tarjeta de beneficios y dos looks de apoyo para tu publicación en Mercado Libre, Amazon o tu tienda.
 - `youtube-thumbnail` — Miniaturas de YouTube: Primero te propongo de 3 a 5 conceptos distintos en una línea cada uno; después hago el que elijas, con tu cara y el texto exacto, y lo ajustamos sin rehacerlo.
 - `my-character` — Mi personaje (desde tus fotos): Guardá a una persona real (vos o alguien que lo permitió) como personaje desde sus fotos y reusalo en imágenes, videos y avatares que hablan.
+- `models` — Qué modelo usar: Cómo elige Riftland el modelo, cómo comparar modelos, cuándo cambiar la elección y una tarjeta por modelo con para qué sirve, cuándo elegir otro y cómo pedirle.
+- `prompting` — Cómo pedir (prompts): Cuándo escribir vos el prompt y cuándo pasar las palabras del usuario, las reglas que valen para todos los modelos y una guía por técnica: texto, ediciones, referencias, video, cámara, sonido.
+- `workflows` — Trabajos de varios pasos: Cómo encadenar pasos con tus créditos: de imagen a video, un personaje en una serie, de foto de producto a anuncio, voz y música, un video largo; con sus límites dichos de entrada.

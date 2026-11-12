@@ -33,6 +33,12 @@ The design (a logo or artwork; a PNG with a transparent background works best) a
 - Very long text in the design may get distorted on curved products (mugs, bottles, caps): prefer flat products for text-heavy art.
 - Don't add brands, slogans or prices the user didn't give.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:references-and-roles`: References and their roles. File: `riftland-prompting/references/technique-references-and-roles.md`
+- `technique:product-photography`: Product photography looks. File: `riftland-prompting/references/technique-product-photography.md`
+- `technique:editing-and-changes`: Editing and changing a result. File: `riftland-prompting/references/technique-editing-and-changes.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

@@ -38,6 +38,12 @@ Ask `models_explore` (`action: "recommend"` with the `need`); don't answer from 
 ## Deliver
 The images in order with their links and one line per slide, then the series' credits and the balance. Offer captions for each slide, a cover variant, more slides in the same style, `upscale_media` for print, or a short video from one frame (`cinematic-shot`).
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:consistency`: Keeping a character, a product or a brand the same. File: `riftland-prompting/references/technique-consistency.md`
+- `technique:image-prompting`: Prompting an image. File: `riftland-prompting/references/technique-image-prompting.md`
+- `technique:text-on-image`: Text on an image. File: `riftland-prompting/references/technique-text-on-image.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

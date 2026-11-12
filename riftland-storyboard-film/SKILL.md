@@ -40,6 +40,15 @@ The film (`url`, `downloadUrl`), the poster, the ZIP (takes, stems, EDL) and the
 - Crowds and fast hand action lower consistency; keep 1–2 characters per shot.
 - Never real people without their consent.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:video-prompting`: Prompting a video. File: `riftland-prompting/references/technique-video-prompting.md`
+- `technique:camera-moves`: Camera movement vocabulary. File: `riftland-prompting/references/technique-camera-moves.md`
+- `technique:multi-shot-and-timing`: Multi-shot clips and timing. File: `riftland-prompting/references/technique-multi-shot-and-timing.md`
+- `technique:dialogue-sound-music`: Dialogue, sound and music. File: `riftland-prompting/references/technique-dialogue-sound-music.md`
+- `workflow:storyboard-to-film`: Storyboard to film with Riftland Cine. File: `riftland-workflows/references/workflow-storyboard-to-film.md`
+- `workflow:character-series`: A character, then a consistent series. File: `riftland-workflows/references/workflow-character-series.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

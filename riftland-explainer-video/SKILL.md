@@ -81,6 +81,11 @@ The MP4 (`url`; `downloadUrl` to keep it; `appUrl` to edit), the approved script
 - Rendering twice "to see": check the frames first, render once.
 - Forgetting the brand kit: a topic without a brand still needs the minimal one.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:dialogue-sound-music`: Dialogue, sound and music. File: `riftland-prompting/references/technique-dialogue-sound-music.md`
+- `workflow:voice-and-music-for-video`: Voice-over and music for a video. File: `riftland-workflows/references/workflow-voice-and-music-for-video.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

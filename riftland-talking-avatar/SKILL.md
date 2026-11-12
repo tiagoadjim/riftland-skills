@@ -51,6 +51,11 @@ Default: the character's saved voice, else one matching the script language and 
 - Profile shots, sunglasses, glare and open-mouth photos lip-sync worse.
 - Long scripts on `talk-omnihuman` or `talk-kling` hit their limits: split them or use `talk-infinitetalk`.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:dialogue-sound-music`: Dialogue, sound and music. File: `riftland-prompting/references/technique-dialogue-sound-music.md`
+- `workflow:portrait-to-talking-avatar`: Portrait to talking avatar. File: `riftland-workflows/references/workflow-portrait-to-talking-avatar.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

@@ -36,6 +36,11 @@ For a voice-over, the script and the language; for music, what it's for and the 
 - Music length is decided by the model (a jingle is short, a song is a few minutes); trim it in an editor if needed.
 - Don't imitate a real singer or a famous song, and don't promise exclusive rights the user hasn't checked.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:dialogue-sound-music`: Dialogue, sound and music. File: `riftland-prompting/references/technique-dialogue-sound-music.md`
+- `workflow:voice-and-music-for-video`: Voice-over and music for a video. File: `riftland-workflows/references/workflow-voice-and-music-for-video.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

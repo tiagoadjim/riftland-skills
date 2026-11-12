@@ -48,6 +48,11 @@ Styles: `anime`, `claymation`, `toy-cgi`, `knitted`, `lego`, `noir`, `pixel`, `w
 - Several people or heavy occlusion confuse the subject selection: pick clips with one clear subject.
 - Real people only with consent; no public figures, no sexual or deceptive content.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:references-and-roles`: References and their roles. File: `riftland-prompting/references/technique-references-and-roles.md`
+- `technique:consistency`: Keeping a character, a product or a brand the same. File: `riftland-prompting/references/technique-consistency.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

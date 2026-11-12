@@ -87,6 +87,10 @@ The kit as the evidence table (field, value, label) with the logo link and the k
 - More than 6 colors or 5 selling points: the kit holds up to 6 colors (#RRGGBB) and 5 selling points.
 - Creating a duplicate kit instead of updating the existing one.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `workflow:brand-to-ads`: Brand kit to on-brand static ads. File: `riftland-workflows/references/workflow-brand-to-ads.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

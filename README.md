@@ -5,9 +5,15 @@ These skills teach an AI agent (Claude, Claude Code, Codex, Cursor and others) t
 
 ## What is here
 
-43 skills: 42 workflows, one per thing you may want to make, and `riftland`, the guide that maps Riftland's tools, credits, files and jobs and says which skill to load for each request. Long material lives in a `references/` folder next to a skill and is read only when needed.
+46 skills: 42 workflows, one per thing you may want to make; three guides (`riftland-models`, `riftland-prompting`, `riftland-workflows`) that teach what each model is for, how to ask it and how to run a job of several steps; and `riftland`, the guide that maps Riftland's tools, credits, files and jobs and says which skill to load for each request. Long material lives in a `references/` folder next to a skill and is read only when needed.
 
 `riftland`: The map of Riftland's MCP: how its tools, credits, files and jobs fit together, and which skill to load for each request.
+
+### Guides: which model, how to ask, multi-step jobs
+
+- `riftland-models`: Which model for what: how Riftland chooses an image or a video model, how to compare models, when to override the choice and when not to, how to read a model card, and a decision table by need that points to the family to open.
+- `riftland-prompting`: How to ask Riftland's models: when to write a prompt yourself and when to pass the user's words, the short rules that hold for every model, and one guide per technique (an image, text on an image, edits, references, consistency, video, camera moves, image to video, shots and timing, dialogue and sound, product photography, troubleshooting).
+- `riftland-workflows`: Multi-step jobs across Riftland's tools: how to run a chain (price each spending step, carry ids from one step to the next, where the user decides, what to do when a step fails, one agreed total), a recipe per job, and what Riftland cannot chain today.
 
 ### Images and design
 
@@ -117,9 +123,13 @@ Skills do not generate anything by themselves: they use the Riftland MCP server,
 - In Account → Connections you can set a credit limit per connection; the server enforces it.
 - If a job fails, its credits return to your balance.
 
-## Recommended models stay current
+## What each model is for
 
-Which model is best for a request changes as models improve, so no skill names one. Riftland's router picks the model for each request, and the live answer is one call away: `models_explore` with action `recommended` over MCP, or `riftland models --recommended` in the Riftland CLI. [MODELS.md](MODELS.md) and `models.json` are a dated snapshot of that answer, for people and tools that cannot call it. The check in `scripts/validate.mjs` fails when a skill names a model outside `model-allowlist.json` (the few studio tools that take a model field of their own).
+Riftland's knowledge base has one card per image and video model: what it is best for, when to pick something else, how to prompt it, its facts and the evidence behind each claim. The skills teach it through references generated from Riftland's knowledge base: `riftland-models` has one file per model and a short index per family, `riftland-prompting` one guide per technique and `riftland-workflows` one recipe per multi-step job. Every generated file starts with a marker line that names its source and the knowledge version. Nothing is hand-written twice: a card is written once, in Riftland, and every file here is generated from it.
+
+Which model is best for a request still changes as models improve, so the live answer is one call away: `models_explore` over MCP (action `get` shows a card, `recommended` the router's picks) and `guide` (a card, a technique or a workflow), or `riftland models --recommended` in the Riftland CLI. Riftland's router picks the model for each request. [MODELS.md](MODELS.md) and `models.json` are a dated snapshot of the picks and the cards, for people and tools that cannot call it.
+
+`scripts/validate.mjs` keeps model ids out of hand-written text: a skill file that names a model outside `model-allowlist.json` (the few studio tools that take a model field of their own) fails. A generated file is exempt only while its marker's version equals `knowledgeVersion` in `models.json` and its checksum matches its text.
 
 ## This repository is generated
 
@@ -133,10 +143,10 @@ License: not yet chosen; all rights reserved until a LICENSE file is added.
 
 ## En español
 
-[Riftland](https://riftland.io) crea imágenes, videos, audio y 3D con IA con tus propios créditos. Este repositorio reúne sus 43 skills para agentes de IA: recetas que dicen qué herramienta usar, qué preguntarte, cómo gastar y qué entregarte.
+[Riftland](https://riftland.io) crea imágenes, videos, audio y 3D con IA con tus propios créditos. Este repositorio reúne sus 46 skills para agentes de IA: recetas que dicen qué herramienta usar, qué preguntarte, cómo gastar y qué entregarte.
 
 - **Instalar:** `npx skills add tiagoadjim/riftland-skills`, o en Claude Code `/plugin marketplace add tiagoadjim/riftland-skills` y después `/plugin install riftland@riftland`.
 - **Conectar tu cuenta:** el servidor MCP es https://riftland.io/mcp; entrás con OAuth o con una API key de Cuenta → Conexiones. Nunca pegues una key en una skill ni en un prompt.
 - **Gasto:** `plan` es gratis; `create` gasta hasta el `max_credits` que aceptaste; podés fijar un límite por conexión.
-- **Modelos:** ninguna skill nombra un modelo; el servidor elige y `MODELS.md` es una foto con fecha de esa elección.
+- **Modelos:** las skills enseñan para qué sirve cada modelo con tarjetas generadas desde el código de Riftland (`riftland-models`); la respuesta en vivo sigue siendo `models_explore` y `guide`, y `MODELS.md` es una foto con fecha.
 - **Repositorio generado:** se exporta desde el código de Riftland; los pull requests no se mergean acá, los issues sí son bienvenidos.

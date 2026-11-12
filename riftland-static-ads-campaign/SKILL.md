@@ -47,6 +47,12 @@ The brand (website or an existing brand) and how many ads. Default the rest: obj
 - Never invent reviews, ratings or prices: put the real ones in `prompt` or leave them out.
 - Start with 6–12 ads, review, then scale the winners with variations.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:text-on-image`: Text on an image. File: `riftland-prompting/references/technique-text-on-image.md`
+- `technique:consistency`: Keeping a character, a product or a brand the same. File: `riftland-prompting/references/technique-consistency.md`
+- `workflow:brand-to-ads`: Brand kit to on-brand static ads. File: `riftland-workflows/references/workflow-brand-to-ads.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

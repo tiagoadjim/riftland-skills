@@ -103,6 +103,12 @@ The character's image (and sheet) as URLs, then one summary line: what was made,
 - Passing the trained identity's model on the first `create`, before the build is ready.
 - Using a group photo or a covered face as the main photo.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:consistency`: Keeping a character, a product or a brand the same. File: `riftland-prompting/references/technique-consistency.md`
+- `technique:references-and-roles`: References and their roles. File: `riftland-prompting/references/technique-references-and-roles.md`
+- `workflow:character-series`: A character, then a consistent series. File: `riftland-workflows/references/workflow-character-series.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

@@ -1,7 +1,8 @@
 {
   "schema": 1,
-  "note": "A snapshot of Riftland's router. The live answer is models_explore with action recommended (MCP) or riftland models --recommended (CLI). Do not hard-code a model from it.",
+  "note": "A snapshot of Riftland's router and model cards. The live answer is models_explore with action recommended or get, and guide (MCP), or riftland models --recommended (CLI). Do not hard-code a model from it.",
   "recommendationsVersion": "bf497c68",
+  "knowledgeVersion": "acf1ebe9037f",
   "generatedOn": "2026-11-12",
   "recommended": [
     {
@@ -340,129 +341,191 @@
     "image": [
       {
         "id": "nano-banana-2.1",
-        "label": "Nano Banana 2.1"
+        "label": "Nano Banana 2.1",
+        "family": "Google Nano Banana",
+        "best_for": "Fast drafts and many rounds of small changes; Posters, covers and social graphics with a short headline; Changing a photo you upload: remove, replace or restyle one thing"
       },
       {
         "id": "gpt-image-2.6-flare",
-        "label": "GPT Image 2.6 Flare"
+        "label": "GPT Image 2.6 Flare",
+        "family": "GPT Image",
+        "best_for": "Logos and icons as vector files; Stickers, cut-outs and overlays with a transparent background; Infographics, diagrams and posters with real text"
       },
       {
         "id": "gpt-image-2.6-sunburst",
-        "label": "GPT Image 2.6 Sunburst"
+        "label": "GPT Image 2.6 Sunburst",
+        "family": "GPT Image",
+        "best_for": "Final graphics where detail and precise edits matter; Edits that must keep an identity or a layout; Logos and icons as vector files"
       },
       {
         "id": "gpt-image-2.5-flare",
-        "label": "GPT Image 2.5 Flare"
+        "label": "GPT Image 2.5 Flare",
+        "family": "GPT Image",
+        "best_for": "Posters, logos and graphics where the words must be right; Infographics and diagrams; Ad and UI mock-ups where the layout matters"
       },
       {
         "id": "seedream-5.5",
-        "label": "Seedream 5.5"
+        "label": "Seedream 5.5",
+        "family": "ByteDance Seedream",
+        "best_for": "Edits you will repeat over many rounds; Images with a headline or a label that must stay legible; Product hero images with space left for a headline"
       },
       {
         "id": "seedream-5-pro",
-        "label": "Seedream 5.0 Pro"
+        "label": "Seedream 5.0 Pro",
+        "family": "ByteDance Seedream",
+        "best_for": "Precise edits of an image you upload; Infographics and layouts that need controlled changes; Photoreal scenes from a clear brief"
       },
       {
         "id": "flux-3",
-        "label": "FLUX 3 Image"
+        "label": "FLUX 3 Image",
+        "family": "Black Forest Labs FLUX",
+        "best_for": "Complex prompts with many parts; Whole-image changes: weather, relighting, colour grading and text edits; Images with a short title or sign"
       },
       {
         "id": "qwen-image-3",
-        "label": "Qwen Image 3"
+        "label": "Qwen Image 3",
+        "family": "Alibaba Qwen Image",
+        "best_for": "Newspaper pages, menus and storyboards with many regions; Posters with text in several languages; Very small text that must stay readable"
       },
       {
         "id": "ideogram-4",
-        "label": "Ideogram 4"
+        "label": "Ideogram 4",
+        "family": "Ideogram",
+        "best_for": "Posters and flyers with a headline and supporting lines; Layouts where each element has a place: title, badge, caption; Graphics in a brand palette given as colour names or hex codes"
       },
       {
         "id": "krea-2",
-        "label": "Krea 2 Large"
+        "label": "Krea 2 Large",
+        "family": "Krea",
+        "best_for": "Photographs with raw texture, grain and motion blur; A look fixed by a style reference or a moodboard; Cinematic stills and art-directed scenes"
       },
       {
         "id": "flux-2-max",
-        "label": "FLUX.2 Max"
+        "label": "FLUX.2 Max",
+        "family": "Black Forest Labs FLUX",
+        "best_for": "Final images where the highest quality is the goal; Brand graphics that need exact colours given as hex codes; Photoreal stills with fine detail"
       },
       {
         "id": "nano-banana-2",
-        "label": "Nano Banana 2"
+        "label": "Nano Banana 2",
+        "family": "Google Nano Banana",
+        "best_for": "Fast drafts and many rounds of small changes; Posters, covers and social graphics with a short headline; Changing a photo you upload: remove, replace or restyle one thing"
       },
       {
         "id": "nano-banana-pro",
-        "label": "Nano Banana Pro"
+        "label": "Nano Banana Pro",
+        "family": "Google Nano Banana",
+        "best_for": "Final pieces where a brand look must stay consistent; Instructions with many parts that a quick model drops; Posters and covers with text and a studio-lit look"
       },
       {
         "id": "seedream-4.5",
-        "label": "Seedream 4.5"
+        "label": "Seedream 4.5",
+        "family": "ByteDance Seedream",
+        "best_for": "Photoreal scenes and product shots from a clear brief; Changing an image you upload: replace one object, keep the rest; Pictures built from several references with different jobs"
       },
       {
         "id": "gpt-image-2",
-        "label": "GPT Image 2"
+        "label": "GPT Image 2",
+        "family": "GPT Image",
+        "best_for": "Posters, logos and graphics where the words must be right; Infographics and diagrams; Ad and UI mock-ups where the layout matters"
       },
       {
         "id": "flux-2-pro",
-        "label": "FLUX.2 Pro"
+        "label": "FLUX.2 Pro",
+        "family": "Black Forest Labs FLUX",
+        "best_for": "Brand graphics that need exact colours given as hex codes; Short text inside a picture, such as a sign or a title; Photoreal and cinematic stills"
       },
       {
         "id": "rift-id-lora",
-        "label": "Rift ID · LoRA"
+        "label": "Rift ID · LoRA",
+        "family": "Riftland",
+        "best_for": "The same character in many different scenes; A consistent series: a story, a campaign, a set of avatars; Portraits of a character in new outfits or places"
       },
       {
         "id": "riftland-soul",
-        "label": "Riftland Rair"
+        "label": "Riftland Rair",
+        "family": "Riftland",
+        "best_for": "Portraits and fashion photos of people with an editorial look; Profile pictures and creator photos with real skin texture; Lookbook and magazine-style shots"
       }
     ],
     "video": [
       {
         "id": "kling-3",
-        "label": "Kling 3.0 Pro"
+        "label": "Kling 3.0 Pro",
+        "family": "Kuaishou Kling",
+        "best_for": "Scenes with dialogue, where who speaks matters; Several shots in one request, with a camera plan for each; Believable physical motion: people moving, objects falling"
       },
       {
         "id": "kling-4",
-        "label": "Kling 4.0"
+        "label": "Kling 4.0",
+        "family": "Kuaishou Kling",
+        "best_for": "Long clips that follow one subject; Fast action and orbit or tracking camera moves; A wide cinematic frame"
       },
       {
         "id": "kling-2.6",
-        "label": "Kling 2.6 Pro"
+        "label": "Kling 2.6 Pro",
+        "family": "Kuaishou Kling",
+        "best_for": "Short clips with sound and some dialogue; Animating a still image; Simple scenes with one subject and one action"
       },
       {
         "id": "seedance-2.5",
-        "label": "Seedance 2.5"
+        "label": "Seedance 2.5",
+        "family": "ByteDance Seedance",
+        "best_for": "Long cinematic takes in one pass; A planned sequence of shots with time ranges; Clips with sound, speech and ambience"
       },
       {
         "id": "seedance-2.0",
-        "label": "Seedance 2.0"
+        "label": "Seedance 2.0",
+        "family": "ByteDance Seedance",
+        "best_for": "Sport, dance and collisions, where motion and physics matter; Short clips with sound; Animating a still image"
       },
       {
         "id": "seedance-2.0-fast",
-        "label": "Seedance 2.0 Fast"
+        "label": "Seedance 2.0 Fast",
+        "family": "ByteDance Seedance",
+        "best_for": "Rehearsing a shot before a final render; Quick tests of a prompt or a camera move; Short clips with sound"
       },
       {
         "id": "veo-3.1",
-        "label": "Veo 3.1"
+        "label": "Veo 3.1",
+        "family": "Google Veo",
+        "best_for": "Scenes with dialogue that must match the picture; Atmosphere: ambience and sound effects as part of the shot; Cinematic, realistic shots described in film language"
       },
       {
         "id": "veo-3.1-fast",
-        "label": "Veo 3.1 Fast"
+        "label": "Veo 3.1 Fast",
+        "family": "Google Veo",
+        "best_for": "Rehearsing a shot before the final render; Quick tries of a prompt, a camera move or a line of dialogue; Scenes with dialogue and ambience"
       },
       {
         "id": "wan-2.6",
-        "label": "Wan 2.6"
+        "label": "Wan 2.6",
+        "family": "Alibaba Wan",
+        "best_for": "Silent clips from a short description; A clip that changes scene, written as shot blocks; Animating a still image"
       },
       {
         "id": "wan-3-prime",
-        "label": "Wan 3.0 Prime"
+        "label": "Wan 3.0 Prime",
+        "family": "Alibaba Wan",
+        "best_for": "Clips with speech, music and sound effects in one pass; A planned sequence of timed shots; Animating a still image"
       },
       {
         "id": "flux-3-video",
-        "label": "FLUX.3 Video"
+        "label": "FLUX.3 Video",
+        "family": "Black Forest Labs FLUX Video",
+        "best_for": "A speaking person with lip-sync; Several scenes in one clip, with timed steps; Stylised looks and typography"
       },
       {
         "id": "minimax-h3",
-        "label": "MiniMax H3"
+        "label": "MiniMax H3",
+        "family": "MiniMax",
+        "best_for": "Clips with their own sound track, such as ambience and speech; Product and brand clips with a name or label in view; Animating a still image"
       },
       {
         "id": "hailuo-2.3",
-        "label": "Hailuo 2.3"
+        "label": "Hailuo 2.3",
+        "family": "MiniMax",
+        "best_for": "Character motion and facial expressions; Action beats with a clear camera move; Animating a still image"
       }
     ]
   }

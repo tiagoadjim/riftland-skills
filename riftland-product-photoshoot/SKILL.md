@@ -105,6 +105,13 @@ Show the images grouped by intent, each as its URL (`url`; `downloadUrl` to keep
 - Regenerating from scratch for a small fix instead of using `change_of`.
 - Starting without the price.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:product-photography`: Product photography looks. File: `riftland-prompting/references/technique-product-photography.md`
+- `technique:references-and-roles`: References and their roles. File: `riftland-prompting/references/technique-references-and-roles.md`
+- `technique:editing-and-changes`: Editing and changing a result. File: `riftland-prompting/references/technique-editing-and-changes.md`
+- `workflow:product-to-ad`: Product photo to product photos to a video ad. File: `riftland-workflows/references/workflow-product-to-ad.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

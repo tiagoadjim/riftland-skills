@@ -4,6 +4,7 @@
 //   node scripts/validate.mjs [repository-dir]      (default: the folder above scripts/)
 //
 // This repository is generated from Riftland's source: this file is copied as it is. Do not edit it here.
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -22,6 +23,12 @@ const TEXT_FILE = /\.(md|json|ya?ml|mjs)$/;
 const PROVIDERS = ["RW5oYW5jb3I=", "UnVud2FyZQ==", "ZmFsLmFp", "V2F2ZVNwZWVk", "Qnl0ZVBsdXM=", "RWxldmVuTGFicw==", "SGV5R2Vu", "=UmVwbGljYXRl", "T3BlbkFJ", "QW50aHJvcGlj"]
   .map((b) => ({ name: Buffer.from(b.replace(/^=/, ""), "base64").toString("utf8"), exact: b.startsWith("=") }));
 const MONEY = [new RegExp(["US\\$", "\\bUS" + "D\\b"].join("|")), new RegExp("\\$" + "\\s?\\d")];
+
+// A generated file (a model card, a technique, a workflow, the models index) starts with this marker line: its source, the knowledge version
+// and a checksum of the text that follows. Without access to the source this script cannot regenerate it, so it checks what it can: the
+// version is the one models.json records, the checksum matches the text, and every model the file names is in models.json.
+const GENERATED_MARKER = /^<!-- generated from Riftland's knowledge base: (?:(model family|model|technique|workflow) "([^"\n]+)"|(models index)), version ([0-9a-f]+), checksum ([0-9a-f]{8})\. Do not edit\. -->\n\n/;
+const checksum = (text) => createHash("sha256").update(text).digest("hex").slice(0, 8);
 
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const lineCount = (text) => text.replace(/\n$/, "").split("\n").length;
@@ -76,7 +83,10 @@ else version = versionText.trim();
 // ---------------------------------------------------------------- models
 const models = readJson("models.json");
 const catalogIds = new Set();
+let knowledgeVersion = null;
 if (models) {
+  if (typeof models.knowledgeVersion === "string" && /^[0-9a-f]+$/.test(models.knowledgeVersion)) knowledgeVersion = models.knowledgeVersion;
+  else fail("models.json", "has no knowledgeVersion");
   for (const kind of ["image", "video"]) for (const m of models.catalog?.[kind] ?? []) catalogIds.add(m.id);
   if (!catalogIds.size) fail("models.json", "has no catalog of model ids");
   for (const r of models.recommended ?? []) {
@@ -93,6 +103,8 @@ if (models) {
     if (!hash) fail("MODELS.md", "does not state its recommendations version");
     else if (hash !== models.recommendationsVersion) fail("MODELS.md", `recommendations version ${hash} differs from models.json (${models.recommendationsVersion})`);
     if (date !== models.generatedOn) fail("MODELS.md", `date ${date} differs from models.json (${models.generatedOn})`);
+    const known = /Knowledge version: `([0-9a-f]+)`/.exec(modelsMd)?.[1];
+    if (knowledgeVersion && known !== knowledgeVersion) fail("MODELS.md", `knowledge version ${known} differs from models.json (${knowledgeVersion})`);
   }
 }
 const allowlist = readJson("model-allowlist.json") ?? {};
@@ -105,6 +117,37 @@ const skillId = (folder) => (folder === "riftland" ? "riftland" : folder.slice("
 for (const [id, ids] of Object.entries(allowlist)) {
   if (!folders.includes(id === "riftland" ? "riftland" : `riftland-${id}`)) fail("model-allowlist.json", `${id} is not a skill`);
   for (const m of ids) if (!catalogIds.has(m)) fail("model-allowlist.json", `${id}: ${m} is not in models.json`);
+}
+
+/**
+ * Whether a file is a generated one that holds up: then it is exempt from the "no model id written by hand" scan below (the marker itself
+ * names the model). Reports what is wrong with one that does not: a stale version, text changed after it was generated, a model that
+ * models.json does not have. A file that does not start with the marker is hand-written and gets no exemption.
+ */
+function checkGenerated(rel, text) {
+  const m = GENERATED_MARKER.exec(text);
+  if (!m) return false;
+  const [marker, kind, id, , version, sum] = m;
+  let ok = knowledgeVersion !== null;
+  if (knowledgeVersion !== null && version !== knowledgeVersion) {
+    fail(rel, `generated file is stale (its marker says version ${version}, models.json says ${knowledgeVersion})`);
+    ok = false;
+  }
+  if (checksum(text.slice(marker.length)) !== sum) {
+    fail(rel, "generated file was edited by hand (its checksum does not match its text): regenerate it with `npm run skills:export` in Riftland's source, never edit it");
+    ok = false;
+  }
+  if (kind === "model" && !catalogIds.has(id)) {
+    fail(rel, `generated file names the model ${id}, which is not in models.json`);
+    ok = false;
+  }
+  for (const r of text.slice(marker.length).matchAll(/(?<![a-z0-9-])model:([a-z0-9][a-z0-9.-]*[a-z0-9])/g)) {
+    if (!catalogIds.has(r[1])) {
+      fail(rel, `generated file refers to the model ${r[1]}, which is not in models.json`);
+      ok = false;
+    }
+  }
+  return ok;
 }
 
 function checkLinks(rel, text) {
@@ -154,6 +197,7 @@ for (const folder of folders) {
     if (!TEXT_FILE.test(rel)) continue;
     const body = read(rel);
     if (body.includes("../")) fail(rel, 'contains "../": a skill is self-contained');
+    if (rel.endsWith(".md") && checkGenerated(rel, body)) continue;
     for (const id of catalogIds) {
       if (allowed.has(id)) continue;
       if (new RegExp(`(?<![a-z0-9.-])${esc(id)}(?![a-z0-9-])`).test(body)) fail(rel, `names the model ${id}: ask the live catalog (models_explore, action recommended) instead`);

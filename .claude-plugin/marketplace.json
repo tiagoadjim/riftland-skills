@@ -53,7 +53,10 @@
         "./riftland-product-photoshoot",
         "./riftland-marketplace-cards",
         "./riftland-youtube-thumbnail",
-        "./riftland-my-character"
+        "./riftland-my-character",
+        "./riftland-models",
+        "./riftland-prompting",
+        "./riftland-workflows"
       ]
     }
   ]

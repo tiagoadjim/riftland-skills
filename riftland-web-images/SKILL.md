@@ -44,6 +44,11 @@ Regenerate only the image that is off: one item, same `use`, `style_prompt` and 
 - Above the fold: fetchpriority high, never lazy. Everything else: loading lazy.
 - The signed links last 7 days: download the files into the repo, never hotlink them.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:image-prompting`: Prompting an image. File: `riftland-prompting/references/technique-image-prompting.md`
+- `technique:text-on-image`: Text on an image. File: `riftland-prompting/references/technique-text-on-image.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

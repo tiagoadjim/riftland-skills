@@ -43,6 +43,13 @@ Keyframes about 23 credits each · take per 5 s: `wan-3-prime` 95, `kling-4` 107
 ## Next steps to offer
 The same keyframe with another move (`update_shots` `move`, then `cinema_takes`), a different grade (`look` and `cinema_cut` again), more shots around it (`cinema-film`), `upscale_media` for 4K.
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:video-prompting`: Prompting a video. File: `riftland-prompting/references/technique-video-prompting.md`
+- `technique:camera-moves`: Camera movement vocabulary. File: `riftland-prompting/references/technique-camera-moves.md`
+- `technique:image-to-video`: Image to video. File: `riftland-prompting/references/technique-image-to-video.md`
+- `technique:dialogue-sound-music`: Dialogue, sound and music. File: `riftland-prompting/references/technique-dialogue-sound-music.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

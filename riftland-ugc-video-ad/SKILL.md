@@ -59,6 +59,10 @@ A vertical creator-style video ad (TikTok, Reels, Shorts) where an AI creator ta
 ## Next steps to offer
 Two or three hook variants for A/B (new jobs with another `hook_id`), the winner at 1080p, a 1:1 or 16:9 version, static ads for the same product (`static-ads-campaign`), or new hooks on the finished video (`ad-remix`).
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:dialogue-sound-music`: Dialogue, sound and music. File: `riftland-prompting/references/technique-dialogue-sound-music.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.

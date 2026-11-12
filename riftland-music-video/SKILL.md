@@ -44,6 +44,13 @@ The song (a file or a public link), which part of it (the film starts with the t
 ## Cost (approximate)
 A 30 s, 10-shot clip at 720p: frames about 230, takes about 1,000–1,500 (`kling-4` 107 and `seedance-2.5` 156 per 5 s; an ambience bed adds 1–3 per take), cut under 20 (the song is used as is, never composed). A spoken intro: voice design 14, the line about 1 per 100 characters, plus lip sync on that take (about 50 per 5 s).
 
+## Go deeper
+Free to read, no credits. Open only what this request needs: call `guide` with `topic` set to the ref, or, when the skill is installed from the repository, open the file named after it.
+- `technique:camera-moves`: Camera movement vocabulary. File: `riftland-prompting/references/technique-camera-moves.md`
+- `technique:multi-shot-and-timing`: Multi-shot clips and timing. File: `riftland-prompting/references/technique-multi-shot-and-timing.md`
+- `workflow:storyboard-to-film`: Storyboard to film with Riftland Cine. File: `riftland-workflows/references/workflow-storyboard-to-film.md`
+- `workflow:long-video-by-chaining`: A longer video from several clips. File: `riftland-workflows/references/workflow-long-video-by-chaining.md`
+
 ## Riftland essentials (every job)
 - Reply in the user's language. Tool errors and job stages come in Spanish: translate them when needed.
 - Questions: ask only what you can't infer, at most 4, as labeled options, and skip what the conversation already answers. Default the rest and say your defaults in one line.
